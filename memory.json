@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Ali Khan",
+      "age": 20,
+      "department": "Data Science",
+      "marks": {
+        "math": 78,
+        "python": 89,
+        "statistics": 74
+      },
+      "address": {
+        "city": "Karachi",
+        "country": "Pakistan"
+      },
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "name": "Ayesha Ahmed",
+      "age": 22,
+      "department": "Artificial Intelligence",
+      "marks": {
+        "math": 85,
+        "python": 91,
+        "machine_learning": 88
+      },
+      "address": {
+        "city": "Lahore",
+        "country": "Pakistan"
+      },
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "name": "Bilal Hussain",
+      "age": 19,
+      "department": "Computer Science",
+      "marks": {
+        "math": 69,
+        "python": 75,
+        "java": 82
+      },
+      "address": {
+        "city": "Islamabad",
+        "country": "Pakistan"
+      },
+      "is_active": false
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-sans text-gray-300 bg-dark-900 antialiased selection:bg-accent-purple selection:text-white;
+    }
+}
+
+/* Custom Scrollbar for Dark Mode */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+}
+
+/* Glass Utilities */
+.glass-panel {
+    @apply bg-glass-100 backdrop-blur-xl border border-white/5 shadow-2xl;
+}
+
+.glass-card {
+    @apply bg-glass-100 backdrop-blur-md border border-white/5 hover:bg-glass-200 transition-all duration-300;
+}
+
+.glass-input {
+    @apply bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-accent-purple/50 focus:ring-1 focus:ring-accent-purple/50 transition-all outline-none;
+}
