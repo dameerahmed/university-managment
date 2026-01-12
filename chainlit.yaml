@@ -1,0 +1,50 @@
+chainlit: 2.4.1
+
+# Interface settings
+ui:
+  name: "Student Management Agent"
+  description: "Stateful Student Management chatbot with step-by-step student addition and full database integration."
+  theme: light
+  default_expand_messages: true
+
+# Auth settings
+auth:
+  required: true
+  providers:
+    - github
+
+data_layer:
+  type: memory
+
+# OAuth Configuration
+oauth_providers:
+  github:
+    client_id: ${OAUTH_GITHUB_CLIENT_ID}
+    client_secret: ${OAUTH_GITHUB_CLIENT_SECRET}
+
+# # AI Model settings (controlled inside agent.py)
+# model:
+#   name: gemini-2.5-flash
+#   temperature: 0.5
+
+# # Tools to expose in Chainlit UI
+# tools:
+#   - name: add_student
+#     description: "Add a student to the database with full validation and DOB auto-format"
+#   - name: students_data
+#     description: "Fetch student records with full details"
+
+# # Environment variables
+# env:
+#   GEMINI_API_KEY: "${GEMINI_API_KEY}"
+
+# # Logging
+# logging:
+#   level: info
+
+# # Entry point for your agent
+# entrypoint: agent.py
+
+# # Optional pre-run commands
+# pre_commands:
+#   - echo "Starting Student Management Agent..."
